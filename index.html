@@ -13,7 +13,7 @@
   <meta property="og:title" content="Exam Writer — Secure Chromebook Exam Writing App" />
   <meta property="og:description" content="Fullscreen exam writing, autosave every minute, admin PIN, print with headers and page numbers. Built for Chromebooks and managed kiosks." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://YOUR-NETLIFY-SITE.netlify.app/" />
+  <meta property="og:url" content="https://examwriter.app/" />
 
   <style>
     :root{
@@ -123,15 +123,17 @@
     </div>
   </section>
 
-  <!-- MEDIA / SCREENSHOT PLACEHOLDER -->
-  <section class="container">
-    <div class="media">
-      <div>
-        <strong>Screenshot / short video demo</strong>
-        <div class="muted small" style="margin-top:.35rem">Drop a static image or GIF here later. This placeholder ships with the landing page.</div>
-      </div>
+  <!-- MEDIA / SCREENSHOT -->
+    <section class="container">
+    <div class="media" style="padding:0; overflow:hidden;">
+        <img src="/images/snapshot.png" alt="Exam Writer app screenshot" 
+            style="display:block; width:100%; height:auto; border-radius:1rem;" 
+            loading="lazy" />
     </div>
-  </section>
+    <div class="muted small" style="text-align:center; margin-top:.4rem;">
+        Screenshot: Exam Writer running on Chromebook in fullscreen mode.
+    </div>
+    </section>
 
   <!-- FEATURES -->
   <section id="features" class="container anchor">
@@ -323,8 +325,8 @@
 
     // Optional: set the "Try the App" link to your app path (edit here if needed)
     // Example: if your PWA is deployed under /app/, leave as-is. Otherwise change both:
-    document.getElementById('tryLink').href = '/app/index.html';
-    document.getElementById('tryButton').href = '/app/index.html';
+    document.getElementById('tryLink').href = 'https://run.examwriter.app/';
+    document.getElementById('tryButton').href = 'https://run.examwriter.app/';
   </script>
 </body>
 </html>
